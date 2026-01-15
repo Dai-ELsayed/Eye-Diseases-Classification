@@ -131,8 +131,8 @@ models/
 ├── cnn_model.h5
 ├── efficientb0_model.h5
 ├── efficientb3_model.h5
-│ └── finetuned_model.h5
-└── class_names.json
+├── finetuned_model.h5
+├── class_names.json
 
 Ensure the filenames match exactly for the deployment notebook or Gradio app to work.
 You can download the .rar file from the repository releases section.
