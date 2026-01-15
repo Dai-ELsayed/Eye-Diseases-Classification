@@ -10,7 +10,7 @@ The project explores and compares a **custom CNN model** with **pretrained Effic
 
 - Dataset validation and cleaning
 - Train / validation / test splitting
-- Data loading using **TensorFlow `tf.data` API**
+- Data loading using **TensorFlow**
 - Data augmentation using **Keras preprocessing layers**
 - Training from scratch (CNN) and transfer learning (EfficientNet)
 - Fine-tuning pretrained models
@@ -29,7 +29,7 @@ This project uses the **eye_diseases_classification** on Kaggle:
 1. Download the dataset from Kaggle.  
 2. Extract and place it in your working environment, e.g., `/kaggle/working/dataset/`.  
 3. The training notebook expects a folder structure:
-
+---
    ```bash
 dataset/
 ├── cataract/
@@ -39,7 +39,7 @@ dataset/
 
 ---
 
----
+
 
 ## 📁Project Structure
 
