@@ -37,7 +37,7 @@ dataset/
 ├── glaucoma/
 └── normal/
 
----
+```
 
 
 
@@ -61,7 +61,6 @@ Eye-Disease-Classification/
 └── assets/
 │ ├── deployment.png  
 
----
 
 
 ```
@@ -73,8 +72,9 @@ Eye-Disease-Classification/
 pip install -r requirements.txt
 ```
 
-### Training Models
 
+### Training Models
+```bash
 Open notebooks/eye-diseases-cnn-vs-efficientnet-vs-fine-tuning.ipynb.
 
 Ensure the dataset path is correctly set.
@@ -91,13 +91,18 @@ Train CNN and EfficientNet (B0 & B3)
 
 Evaluate models and save .h5 files and class_names.json
 
+```
+
 ### Deployment (Gradio)
+```bash
 
 Open srcs/deployment.py
 
 Load a trained model and class_names.json.
 
 Run Gradio interface to upload retinal images and predict eye disease.
+
+```
 
 ### Data Preprocessing & Augmentation
 
@@ -128,45 +133,11 @@ models/
 ├── efficientb3_model.h5
 └── class_names.json
 
+```
+
 ---
 
 
 Ensure the filenames match exactly for the deployment notebook or Gradio app to work.
 
 You can download the .rar file from the repository releases section.
-### 2. Create and activate a virtual environment
-
-**On Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-**On Linux / macOS:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Set up environment variables
-
-Create a `.env` file in the root directory and add:
-```env
-OPENROUTER_API_KEY=your_api_key_here
-OPENAI_API_BASE=https://api.openai.com/v1
-```
-
-### 5. Run the application
-```bash
-python main.py
-```
-
-
-
-
-
