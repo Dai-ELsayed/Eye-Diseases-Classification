@@ -59,7 +59,7 @@ Eye-Disease-Classification/
 ├── src/
 │ ├── deployment.py
 └── assets/
-│ ├── deployment.png  
+│ ├──examples.png  
 
 
 
